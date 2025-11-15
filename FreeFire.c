@@ -51,7 +51,6 @@ void inserirItem() {
         fprintf(stderr, "Erro na leitura do nome.\n");
         return;
     }
-    // Remove o '\n' adicionado pelo fgets
     mochila[totalItens].nome[strcspn(mochila[totalItens].nome, "\n")] = 0;
 
     // 2. Entrada do Tipo
